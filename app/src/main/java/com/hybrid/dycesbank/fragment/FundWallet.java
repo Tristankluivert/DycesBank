@@ -134,15 +134,18 @@ View viewGroup;
 
         String money = moneyfund.getText().toString();
         String pin = pinfund.getText().toString();
-       //Integer doub = Integer.parseInt(moneyfund.getText().toString());
+       Integer doub = Integer.parseInt(moneyfund.getText().toString());
 
      //   double moni = Double.parseDouble(mono.getText().toString());
 
         if(money.isEmpty()){
             moneyfund.setError("Minimum is 100$");
             moneyfund.requestFocus();
-        }else {
+        }else if(doub <= 99) {
+            moneyfund.setError("Minimum is 100$");
+            moneyfund.requestFocus();
 
+        }else {
 
             showWaitPop();
             Map<String, Object> map = new HashMap<>();
@@ -152,7 +155,7 @@ View viewGroup;
                         @Override
                         public void onSuccess(Void aVoid) {
                             showSuccess();
-                            sendUserToMainActivity();
+                            //sendUserToMainActivity();
                         }
                     }
             ).addOnFailureListener(new OnFailureListener() {
@@ -180,14 +183,13 @@ View viewGroup;
         final AlertDialog alertDialog = builder.create();
         alertDialog.show();
 
-
         final Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             public void run() {
                 alertDialog.dismiss();
                 timer.cancel();
             }
-        }, 2000);
+        }, 1000);
 
     }
 
@@ -197,15 +199,15 @@ View viewGroup;
        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
        builder.setView(dialogView);
        final AlertDialog alertDialog = builder.create();
+       dialogView.findViewById(R.id.buttoncanc).setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               alertDialog.dismiss();
+           }
+       });
        alertDialog.show();
       //  sendUserToMainActivity();
-       final Timer timer = new Timer();
-       timer.schedule(new TimerTask() {
-           public void run() {
-               alertDialog.dismiss();
-               timer.cancel();
-           }
-       }, 3000);
+
 
    }
 
@@ -213,16 +215,20 @@ View viewGroup;
         View dialogView = LayoutInflater.from(getActivity()).inflate(R.layout.success, (ViewGroup) viewGroup, false);
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setView(dialogView);
+
+
         final AlertDialog alertDialog = builder.create();
+
+        dialogView.findViewById(R.id.buttonOk).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sendUserToMainActivity();
+                alertDialog.dismiss();
+            }
+        });
         alertDialog.show();
 
-        final Timer timer = new Timer();
-        timer.schedule(new TimerTask() {
-            public void run() {
-                alertDialog.dismiss();
-                timer.cancel();
-            }
-        }, 1000);
+
 
     }
 

@@ -32,7 +32,7 @@
 
 
         <Button
-            android:id="@+id/buttonOk"
+            android:id="@+id/buttoncanc"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

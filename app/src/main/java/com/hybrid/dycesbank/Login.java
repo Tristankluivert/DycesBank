@@ -115,22 +115,23 @@ public class Login extends AppCompatActivity {
 
     }
 
+
+
     private void showSuccessPop() {
         ViewGroup viewGroup = findViewById(android.R.id.content);
         View dialogView = LayoutInflater.from(this).inflate(R.layout.success, viewGroup, false);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
         final AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-      sendUserToMainActivity();
-
-        final Timer timer = new Timer();
-        timer.schedule(new TimerTask() {
-            public void run() {
-                alertDialog.dismiss();
-                timer.cancel();
+        dialogView.findViewById(R.id.buttonOk).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sendUserToMainActivity();
             }
-        }, 1000);
+        });
+
+        alertDialog.show();
+
 
     }
 
@@ -141,16 +142,14 @@ public class Login extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
         final AlertDialog alertDialog = builder.create();
+        dialogView.findViewById(R.id.buttoncanc).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alertDialog.dismiss();
+            }
+        });
         alertDialog.show();
 
-
-        final Timer timer = new Timer();
-        timer.schedule(new TimerTask() {
-            public void run() {
-                alertDialog.dismiss();
-                timer.cancel();
-            }
-        }, 1000);
 
     }
 

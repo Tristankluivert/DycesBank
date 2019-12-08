@@ -98,10 +98,7 @@ public class MainFrag extends Fragment {
                 if(documentSnapshot.exists()){
 
                     String name = documentSnapshot.getString("Last name");
-
                     //  Map<String, Object> map = documentSnapshot.getData();
-
-
                     username.setText("HI " + name);
 
                 }else{
