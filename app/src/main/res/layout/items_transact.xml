@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    >
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/success"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        />
+
+<com.hybrid.meetobuy.font.JosefinSans
+    android:id="@+id/money"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/green"
+    android:layout_marginStart="50dp"
+    android:text="Credit  30,000"
+    android:textSize="16sp"
+    android:layout_marginTop="10dp"
+    />
+
+
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:layout_marginStart="50dp"
+        android:text="20/8/2019"
+        android:textSize="12sp"
+        android:layout_marginTop="30dp"
+        />
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:layout_marginStart="50dp"
+        android:text="2;30 Pm"
+        android:textSize="12sp"
+        android:layout_marginTop="50dp"
+        />
+
+</androidx.cardview.widget.CardView>

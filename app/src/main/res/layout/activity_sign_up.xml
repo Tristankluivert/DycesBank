@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It's Free"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="70dp"
+        />
+
+
+    <RelativeLayout
+    android:layout_width="320dp"
+    android:layout_height="50dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="170dp"
+    android:background="@drawable/editextlayout"
+    >
+
+    <com.hybrid.dycesbank.font.JosefinEdit
+        android:id="@+id/edfirstname"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:hint="First name"
+        android:layout_marginStart="10dp"
+        />
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/editextlayout"
+        >
+
+        <com.hybrid.dycesbank.font.JosefinEdit
+            android:id="@+id/edlastname"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Last name"
+            android:layout_marginStart="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"
+        android:background="@drawable/editextlayout"
+        >
+
+        <com.hybrid.dycesbank.font.JosefinEdit
+            android:id="@+id/edmail"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Email"
+            android:layout_marginStart="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/editextlayout"
+        >
+
+        <com.hybrid.dycesbank.font.JosefinEdit
+            android:id="@+id/edpassword"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Password"
+            android:layout_marginStart="10dp"
+           android:inputType="textPassword"
+            />
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="190dp"
+        android:layout_marginStart="40dp"
+        android:checked="true"
+        android:backgroundTint="@color/colorAccent"
+        />
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:layout_marginStart="100dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/terms"
+        />
+
+    <Button
+        android:id="@+id/reguser"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="120dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:background="@drawable/button"
+        android:layout_marginStart="40dp"
+        android:text="Register"
+        />
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="Already have an account?"
+        />
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:id="@+id/signextpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="Login"
+        />
+
+</RelativeLayout>

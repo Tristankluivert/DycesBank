@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".Login">
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="60dp"
+
+        />
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's get you signed in"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="120dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/editextlayout"
+        >
+
+        <com.hybrid.dycesbank.font.JosefinEdit
+            android:id="@+id/lemail"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Email"
+            android:layout_marginStart="10dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/editextlayout"
+        >
+
+        <com.hybrid.dycesbank.font.JosefinEdit
+            android:id="@+id/lepass"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Password"
+            android:layout_marginStart="10dp"
+            android:inputType="textPassword"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/loginuser"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="200dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:background="@drawable/button"
+        android:layout_marginStart="50dp"
+        android:text="Login"
+        />
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I forgot my password"
+        android:layout_marginTop="370dp"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        />
+
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="Don't have an account?"
+        />
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:id="@+id/loginextpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="Login Now"
+        />
+
+</RelativeLayout>

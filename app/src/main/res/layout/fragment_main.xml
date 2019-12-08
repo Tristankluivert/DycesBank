@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    tools:context=".fragment.MainFrag">
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello kluivert,"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How are you today?"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+
+
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        app:cardCornerRadius="10dp"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/money"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <com.hybrid.meetobuy.font.JosefinSans
+            android:id="@+id/edmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_gravity="end"
+            android:layout_marginStart="10dp"
+            android:text="20,000"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="50dp"
+            />
+
+
+        <com.hybrid.meetobuy.font.JosefinSans
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginStart="10dp"
+            android:text="Available Balance"
+            android:layout_marginTop="140dp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:layout_marginStart="45dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:text="Recent Transactions"
+        />
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        >
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/success"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            />
+
+        <com.hybrid.meetobuy.font.JosefinSans
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:layout_marginStart="50dp"
+            android:text="Credit  30,000"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+        <com.hybrid.meetobuy.font.JosefinSans
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:layout_marginStart="50dp"
+            android:text="20/8/2019"
+            android:textSize="12sp"
+            android:layout_marginTop="30dp"
+            />
+
+        <com.hybrid.meetobuy.font.JosefinSans
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:layout_marginStart="50dp"
+            android:text="2;30 Pm"
+            android:textSize="12sp"
+            android:layout_marginTop="50dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/addstuffs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:src="@drawable/ic_add"
+        app:maxImageSize="40dp"
+        app:fabCustomSize="60dp"
+        />
+
+
+</RelativeLayout>

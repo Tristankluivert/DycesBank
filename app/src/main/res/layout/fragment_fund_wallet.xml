@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".fragment.FundWallet">
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HI kluivert,"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        />
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fund your wallet"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:id="@+id/mono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$200"
+        android:textSize="16sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/green"
+        />
+
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How much do you want to add to wallet?"
+        android:textSize="18sp"
+        android:layout_marginTop="170dp"
+        android:layout_marginStart="50dp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/editlayout"
+        >
+
+        <com.hybrid.dycesbank.font.JosefinEdit
+            android:id="@+id/moneyfund"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#DAD7D7"
+            android:hint="$0.00"
+            android:layout_marginStart="10dp"
+            android:inputType="number"
+
+            />
+
+    </RelativeLayout>
+
+
+    <com.hybrid.meetobuy.font.JosefinSans
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your unique pin"
+        android:textSize="18sp"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="50dp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/editlayout"
+        >
+
+        <com.hybrid.dycesbank.font.JosefinEdit
+            android:id="@+id/pinfund"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#DAD7D7"
+            android:hint="****"
+            android:layout_marginStart="10dp"
+            android:inputType="numberPassword"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/savefund"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:background="@drawable/button"
+        android:layout_marginStart="50dp"
+        android:text="Fund wallet"
+        />
+
+
+
+</RelativeLayout>

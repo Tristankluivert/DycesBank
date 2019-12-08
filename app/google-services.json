@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "954711788064",
+    "firebase_url": "https://dycesbank.firebaseio.com",
+    "project_id": "dycesbank",
+    "storage_bucket": "dycesbank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954711788064:android:1b411416bcecad6aee8a45",
+        "android_client_info": {
+          "package_name": "com.hybrid.dycesbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954711788064-qt0e05ib2j5ulftb860b4rn3a7bl7oo1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hybrid.dycesbank",
+            "certificate_hash": "224d7cb41997878d32de91e632a385a576ab79b8"
+          }
+        },
+        {
+          "client_id": "954711788064-eca7348l73odqn44voel32hs2vf4cv3r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5OXcSikgKGDcsPzCI5KGIwrgtA8KSTKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954711788064-eca7348l73odqn44voel32hs2vf4cv3r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
